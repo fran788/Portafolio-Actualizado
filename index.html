@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Frankie Ayes</title>
+    <link rel="stylesheet" href="./src/less/style.less">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor barra">
+            <div class="logo">
+                <h1 class="no-margin">Frankie Ayes</h1>
+                <p>Desarrollador Web Freelancer</p>
+            </div>
+
+            <nav class="navegacion">
+                <a href="#bio" class="navegacion__enlace">Sobre mí</a>
+                <a href="#proyectos" class="navegacion__enlace">Proyectos</a>
+                <a href="#contacto" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="profile">
+            <img src="img/imagen-perfil.png" alt="Foto de perfil">
+            <div>
+                <span class="flex">
+                    <h2>¡Hola!</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-powershell"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4.887 20h11.868c.893 0 1.664 -.665 1.847 -1.592l2.358 -12c.212 -1.081 -.442 -2.14 -1.462 -2.366a1.784 1.784 0 0 0 -.385 -.042h-11.868c-.893 0 -1.664 .665 -1.847 1.592l-2.358 12c-.212 1.081 .442 2.14 1.462 2.366c.127 .028 .256 .042 .385 .042" /><path d="M9 8l4 4l-6 4" /><path d="M12 16h3" /></svg>
+                </span>
+
+                <p>Soy estudiante de Ingeniería en Ciencias de la Computación en la Universidad Católica de Honduras. Me
+                    apasiona el desarrollo web desde antes de entrar a la universidad, cuando comencé aprendiendo con
+                    cursos en Udemy.</p>
+            </div>
+        </section>
+
+        <section id="bio" class="section card">
+            <h2>Biografía</h2>
+            <p>Desde pequeño me han gustado los videojuegos, lo que despertó mi interés por la tecnología. Con el tiempo
+                decidí aprender desarrollo web, adquiriendo conocimientos en HTML, CSS y JavaScript. Actualmente
+                continúo mejorando mis habilidades como freelancer mientras estudio en la universidad.</p>
+        </section>
+
+        <section id="proyectos" class="section card">
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Sistema de farmacia en PSeInt</li>
+                <li>Programas en C y C++</li>
+                <li>Diseños web responsivos</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="section card">
+            <form class="formulario">
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="email">E-mail</label>
+                    <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="mensaje">Mensaje</label>
+                    <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+                </div>
+
+                <div class="campo">
+                    <input id="btnMensaje" type="submit" value="Enviar" class="boton">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Frankie Ayes - Portafolio</p>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
